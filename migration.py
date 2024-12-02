@@ -48,7 +48,6 @@ def migrate_repository():
     os.system(f"cd {local_repo_dir} && git fetch --tags")
     os.system(f"cd {local_repo_dir} && git push {github_repo_url} --tags")
 
-def transfer_pull_requests():
     print("Transferring pull requests from Gitea to GitHub...")
 
     # Step 1: Fetch Pull Requests from Gitea
